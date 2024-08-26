@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <title>Fazendo café</title>
+</head>
+<body>
+    
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.jpg" alt="">
+            <p>Tem café?</p>
+            <button class="bnt-proximo" data-proximo="1">Não</button>
+            <button class="bnt-proximo" data-proximo="2">Sim</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="img/cenario-passo2.jpeg" alt="imagem voltando para casa desistindo da aventura">
+            <p>Não tem café</p>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você pega o café</p>
+            <button class="bnt-proximo" data-proximo="3">Escolher tipo de café</button>
+            <button class="bnt-proximo" data-proximo="4">Comprar café</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você vai até a cafeteria e tem que escolher o tipo de café</p>
+            <button class="bnt-proximo" data-proximo="5">Filtrado</button>
+            <button class="bnt-proximo" data-proximo="6">Espresso</button>
+            <button class="bnt-proximo" data-proximo="7">Instanteneo</button>
+
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você comprou o café, quer adicionar açúcar?</p>
+            <button class="bnt-proximo" data-proximo="8">Sim</button>
+            <button class="bnt-proximo" data-proximo="9">Não</button>
+        <div class="passo" id="passo-5">
+            <img src="img/cenario-passo5.png" alt="">
+            <p>Você adiciona açúcar e agora seu café está pronto</p>        
+         </div>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
